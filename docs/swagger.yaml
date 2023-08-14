@@ -1,0 +1,55 @@
+swagger: "2.0"
+info:
+  description: A short description of the project.
+  version: "0.0.0"
+  title: kube_aiohttp_test
+basePath: /
+schemes:
+  - http
+  - https
+paths:
+  /healthcheck/:
+    get:
+      tags:
+        - healthcheck
+      summary: Get healthcheck
+      description: Get healthcheck
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: success
+        "500":
+          description: error
+  /sleep/:
+    get:
+      tags:
+        - sleep
+      summary: Get sleep
+      description: Get sleep
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: success
+        "500":
+          description: error
+  /external/:
+    get:
+      tags:
+        - external
+      summary: Get external
+      description: Get external
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: success
+        "500":
+          description: error
